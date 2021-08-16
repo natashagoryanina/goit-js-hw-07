@@ -15,15 +15,6 @@ const images = [
 
 let galleryUlElem = document.querySelector('ul');
 
-// images.forEach(elem => {
-//     let galleryLiElem = document.createElement('li');
-//     galleryUlElem.appendChild(galleryLiElem);
-//     let galleryImgElem = document.createElement('img');
-//     galleryImgElem.src = elem.url;
-//     galleryImgElem.alt = elem.alt;
-//     galleryLiElem.appendChild(galleryImgElem);
-// });
-
 images.forEach(elem => {
     let galleryLiElem = document.createElement('li');
     galleryUlElem.appendChild(galleryLiElem);
