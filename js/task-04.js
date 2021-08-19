@@ -4,6 +4,8 @@ console.log(counterValue);
 const actions = document.querySelectorAll('div button');
 console.log(actions);
 
+let span = document.querySelector('span');
+
 let decrementBtn = actions[0];
 console.log(decrementBtn);
 
@@ -16,12 +18,12 @@ incrementBtn.addEventListener('click', increment);
 
 function decrement() {
     counterValue = Number(counterValue) - 1;
-    document.querySelector('span').textContent = counterValue;
+    span.textContent = counterValue;
     console.log(counterValue);
 };
 
 function increment() {
     counterValue = Number(counterValue) + 1;
-    document.querySelector('span').textContent = counterValue;
+    span.textContent = counterValue;
     console.log(counterValue);
 };

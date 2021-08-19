@@ -15,9 +15,9 @@ const images = [
 
 let galleryUlElem = document.querySelector('ul');
 
-images.forEach(elem => {
+images.map(elem => {
     let galleryLiElem = document.createElement('li');
-    galleryUlElem.appendChild(galleryLiElem);
+    galleryUlElem.append(galleryLiElem);
     galleryLiElem.insertAdjacentHTML("beforeend",
     `<img src = ${elem.url} alt = ${elem.alt}>`)
 });

@@ -9,10 +9,10 @@ const ingredients = [
 
 let ulElem = document.querySelector('ul');
 
-ingredients.forEach(elem => {
+ingredients.map(elem => {
     let liElem = document.createElement('li');
     liElem.textContent = elem;
-    ulElem.appendChild(liElem);
+    ulElem.append(liElem);
   }
 );
 
