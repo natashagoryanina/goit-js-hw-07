@@ -9,12 +9,12 @@ const ingredients = [
 
 let ulElem = document.querySelector('ul');
 
-ingredients.map(elem => {
+const markup = ingredients.map(elem => {
     let liElem = document.createElement('li');
     liElem.textContent = elem;
-    ulElem.append(liElem);
+    return liElem;
   }
 );
 
-console.log(ulElem);
+ulElem.append(...markup);
 
